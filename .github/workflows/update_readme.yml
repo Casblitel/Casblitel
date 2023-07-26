@@ -28,11 +28,14 @@ jobs:
       - name: Run generateReadme.js
         run: node generateReadme.js
 
-      - name: Commit changes
+      - name: Configure Git
         run: |
           git config --global --add safe.directory /github/workspace
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+
+      - name: Commit changes
+        run: |
           git add README.md
           git commit -m "Update README.md" || true
 
