@@ -20,23 +20,30 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "16" # Use the Node.js version you prefer
+          node-version: "18" # Use the Node.js version you prefer
 
       - name: Install dependencies
         run: npm install
 
+      - name: Create temp directory
+        run: |
+          mkdir temp
+          cp -R . temp
+
       - name: Run generateReadme.js
+        working-directory: ./temp
         run: node generateReadme.js
 
       - name: Commit changes
+        working-directory: ./temp
         run: |
-          git config --global --add safe.directory /github/workspace
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
           git add README.md
           git commit -m "Update README.md" || true
 
       - name: Push changes
-        uses: ad-m/github-push-action@v0.5.0
+        uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          directory: ./temp
