@@ -36,7 +36,4 @@ jobs:
           git commit -m "Update README.md" || true
 
       - name: Push changes
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ # Change this to the appropriate directory if needed
+        run: git push origin main
