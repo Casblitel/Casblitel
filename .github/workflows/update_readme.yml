@@ -1,4 +1,4 @@
-name: Update README
+name: Generate and Update README
 
 on:
   push:
@@ -25,13 +25,18 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run generateReadme.js
+      - name: Generate README
         run: node generateReadme.js
 
       - name: Commit changes
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add README.md
-          git commit -m "Update README.md" || true
-          git push
+          git add generateReadme.js
+          git commit -m "Update generateReadme.js" || true
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.5.0
+        with:
+          branch: main
+          github_token: ${{ secrets.GITHUB_TOKEN }}
