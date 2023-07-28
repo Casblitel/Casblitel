@@ -32,11 +32,11 @@ jobs:
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git config --local --add safe.directory '*'
           git add README.md
           git commit -m "Update README.md" || true
 
       - name: Push changes
-        uses: ad-m/github-push-action@v0.5.0
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./ # Change this to the appropriate directory if needed
