@@ -37,6 +37,7 @@ jobs:
 
       - name: Push changes
         run: |
-          git push origin main --follow-tags -c "http.extraheader=AUTHORIZATION: basic ${{ secrets.PERSONAL_ACCESS_TOKEN }}"
+          git remote set-url origin https://github.com/Casblitel/Casblitel.git
+          git push origin main
         env:
           PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
