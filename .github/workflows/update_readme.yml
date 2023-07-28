@@ -36,8 +36,7 @@ jobs:
           git commit -m "Update README.md" || true
 
       - name: Push changes
-        run: |
-          git remote set-url origin https://github.com/Casblitel/Casblitel.git
-          git push origin main
-        env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        uses: softprops/action-gh-pages@v3
+        with:
+          branch: main
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
