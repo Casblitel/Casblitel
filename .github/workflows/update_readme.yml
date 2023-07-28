@@ -17,6 +17,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Configure working directory permissions
+        run: |
+          sudo chown -R ${{ github.actor }} /github/workspace
+          sudo chgrp -R ${{ github.actor }} /github/workspace
+
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
