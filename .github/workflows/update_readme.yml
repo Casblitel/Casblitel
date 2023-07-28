@@ -37,3 +37,5 @@ jobs:
 
       - name: Push changes
         run: git push origin main
+        env:
+          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
