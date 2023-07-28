@@ -34,9 +34,4 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add README.md
           git commit -m "Update README.md" || true
-
-      - name: Push changes
-        uses: softprops/action-gh-pages@v3
-        with:
-          branch: main
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          git push
