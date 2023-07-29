@@ -98,6 +98,6 @@ Communication and collaboration:
 - ![Scrum](https://img.shields.io/badge/-Scrum-6F126F?logo=scrum&logoColor=white) : Agile framework for project management.
 - ![DevOps](https://img.shields.io/badge/-DevOps-B2123F?logo=devops&logoColor=white) Collaboration between development and operations teams to enhance software development, deployment, and monitoring processes.
 
-Added the Tue Jul 25 2023
+Added the Tue Jul 25, 2023
 
-Last update on Jul 26, 2023
+Last update on Jul 29, 2023
