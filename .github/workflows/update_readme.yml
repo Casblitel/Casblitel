@@ -1,4 +1,4 @@
-name: Generate and Update README
+name: Update README
 
 on:
   push:
@@ -20,23 +20,22 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "16" # Use the Node.js version you prefer
+          node-version: "16" # Utilisez la version Node.js que vous préférez, ici c'est la version 16
 
       - name: Install dependencies
         run: npm install
 
-      - name: Generate README
+      - name: Run generateReadme.js
         run: node generateReadme.js
 
       - name: Commit changes
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add generateReadme.js
-          git commit -m "Update generateReadme.js" || true
+          git add README.md
+          git commit -m "Update README.md" || true
 
       - name: Push changes
         uses: ad-m/github-push-action@v0.5.0
         with:
-          branch: main
           github_token: ${{ secrets.GITHUB_TOKEN }}
