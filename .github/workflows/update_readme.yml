@@ -29,7 +29,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git config --local user.email "thomas.gauzin@gmail.com" # Remplacez par votre adresse e-mail GitHub
+          git config --local user.email "thomas.gauzin@gmail.com"
           git config --local user.name "Casblitel"
           git add README.md
           git commit -m "Update README.md"
