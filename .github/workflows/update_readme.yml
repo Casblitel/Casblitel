@@ -26,9 +26,11 @@ jobs:
         run: node generateReadme.js
 
       - name: Commit and push changes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "thomas.gauzin@gmail.com" # Remplacez par votre adresse e-mail GitHub
+          git config --local user.name "Casblitel"
           git add README.md
           git commit -m "Update README.md"
-          git push
+          git push origin main
