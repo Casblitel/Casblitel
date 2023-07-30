@@ -2,6 +2,9 @@ name: Generate and Commit README
 on:
   schedule:
     - cron: "0 8 * * *"
+  push:
+    branches:
+      - main # Remplacez "main" par la branche sur laquelle vous souhaitez déclencher l'action
 
 jobs:
   generate_and_commit_readme:
