@@ -1,41 +1,31 @@
-name: Update README
-
+name: Generate and Commit README
 on:
-  push:
-    branches:
-      - main
-
-  # Déclenche le workflow tous les jours à huit heures UTC ;
-  # minutes / heures / jours du mois / mois / jours de la semaine.
   schedule:
     - cron: "0 8 * * *"
 
 jobs:
-  update-readme:
+  generate_and_commit_readme:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Check out repository
         uses: actions/checkout@v2
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "16" # Utilisez la version Node.js que vous préférez, ici c'est la version 16
+          node-version: "14" # Changer la version de Node.js si nécessaire
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run generateReadme.js
+      - name: Generate README.md
         run: node generateReadme.js
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add README.md
-          git commit -m "Update README.md" || true
-
-      - name: Push
-        run: |
-          git remote set-url origin https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}
+          git commit -m "Update README.md"
           git push
