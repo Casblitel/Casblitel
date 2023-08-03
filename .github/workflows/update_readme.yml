@@ -4,7 +4,7 @@ on:
     - cron: "0 8 * * *"
   push:
     branches:
-      - main # Remplacez "main" par la branche sur laquelle vous souhaitez déclencher l'action
+      - main
 
 jobs:
   generate_and_commit_readme:
@@ -17,7 +17,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14 # Changer la version de Node.js si nécessaire
+          node-version: latest # Changer la version de Node.js si nécessaire
 
       - name: Install dependencies
         run: npm install
