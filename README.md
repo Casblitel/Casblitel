@@ -1,8 +1,8 @@
 
 
-[randomWord]: Hello
+[randomWord]: Hi
 
-# Hello there and welcome to my GitHub 👋
+# Hi there and welcome to my GitHub 👋
 
 I represent myself as a full-stack developer from France 🇫🇷
 I create new projects to learn more and more. Everytime I face a problem, I try to solve it. If I'm not able to solve it right away, I try to find a solution, even if I need to learn something new. 
@@ -78,5 +78,5 @@ Communication and collaboration:
 
 Added the Tue Jul 25, 2023
 
-Last update on Sep 10, 2023
+Last update on Sep 11, 2023
 
