@@ -10,10 +10,20 @@ That's why I'm always learning new things.
 
 ## About my knowledge 👨‍🎓
 
+#### Top Technologies
+
+[![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#)
+[![Javascript Badge](https://img.shields.io/badge/-Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)](#)
+[![Typescript Badge](https://img.shields.io/badge/-Typescript-007acc?style=for-the-badge&labelColor=black&logo=typescript&logoColor=007acc)](#)
+[![Nodejs Badge](https://img.shields.io/badge/-Nodejs-3C873A?style=for-the-badge&labelColor=black&logo=node.js&logoColor=3C873A)](#)
+![Python](https://img.shields.io/badge/-Python-blue?style=for-the-badge&labelColor=black&logo=python&logoColor=white)
+
+#### What I know stuff about
+
 ### 🚀 Front-end Development
 ##### Structural:
 - ![HTML](https://img.shields.io/badge/-HTML-orange?logo=html5&logoColor=white&) : Creating the structure of web pages.
--  ![PUG](https://img.shields.io/badge/-PUG-beige?logo=pug&logoColor=dark) : Building HTML templates with a clean syntax.
+- ![PUG](https://img.shields.io/badge/-PUG-beige?logo=pug&logoColor=dark) : Building HTML templates with a clean syntax.
 
 ##### Styling:
 - ![CSS](https://img.shields.io/badge/-CSS-blueviolet?logo=css3&logoColor=white) : Styling the web pages with beautiful designs.
@@ -78,9 +88,5 @@ Communication and collaboration:
 
 Added the Tue Jul 25, 2023
 
-<<<<<<< HEAD
-Last update on Sep 21, 2023
-=======
 Last update on Sep 20, 2023
->>>>>>> 2327fc3fb86836fb219a9c9a87d9c3d3cd2efb47
 
