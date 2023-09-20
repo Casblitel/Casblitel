@@ -39,8 +39,7 @@ That's why I'm always learning new things.
 
 ### 🚀 Front-end Development
 ##### Structural:
-- ![HTML](https://img.shields.io/badge/-HTML-orange?logo=html5&logoColor=white&) : Creating the structure of web pages.
-- ![PUG](https://img.shields.io/badge/-PUG-beige?logo=pug&logoColor=dark) : Building HTML templates with a clean syntax.
+![HTML](https://img.shields.io/badge/-HTML-orange?logo=html5&logoColor=white&) ![PUG](https://img.shields.io/badge/-PUG-beige?logo=pug&logoColor=dark)
 
 ##### Styling:
 - ![CSS](https://img.shields.io/badge/-CSS-blueviolet?logo=css3&logoColor=white) : Styling the web pages with beautiful designs.
