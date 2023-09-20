@@ -69,5 +69,5 @@ Communication and collaboration:
 
 Added the Wed Sep 20, 2023
 
-Last update on Sep 21, 2023
+Last update on Sep 20, 2023
 
