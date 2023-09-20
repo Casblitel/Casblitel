@@ -4,7 +4,7 @@
 
 I represent myself as a full-stack developer from France 🇫🇷
 I create new projects to learn more and more. Everytime I face a problem, I try to solve it. If I'm not able to solve it right away, I try to find a solution, even if I need to learn something new.
-That's why I'm always learning new things.
+That's why I'm always learning new things, and I love that.
 
 ## About my knowledge 👨‍🎓
 
