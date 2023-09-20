@@ -78,5 +78,9 @@ Communication and collaboration:
 
 Added the Tue Jul 25, 2023
 
+<<<<<<< HEAD
 Last update on Sep 21, 2023
+=======
+Last update on Sep 20, 2023
+>>>>>>> 2327fc3fb86836fb219a9c9a87d9c3d3cd2efb47
 
