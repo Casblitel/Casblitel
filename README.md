@@ -58,7 +58,7 @@ That's why I'm always learning new things.
 ![Photoshop](https://img.shields.io/badge/-Photoshop-31a8ff?logo=adobe-photoshop&logoColor=white) ![Figma](https://img.shields.io/badge/-Figma-f24e1e?logo=figma&logoColor=white) ![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?&logo=Adobe%20XD&logoColor=#FF61F6) ![Sketch](https://img.shields.io/badge/Sketch-FFB387?&logo=sketch&logoColor=black) 
 
 ### 🌐 IoT & OS
-##### IoT:
+##### IoT
 ![Arduino](https://img.shields.io/badge/-Arduino-00979D?logo=arduino&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?&logo=Raspberry%20Pi&logoColor=white)
 
 ##### Operating Systems
