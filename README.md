@@ -67,5 +67,5 @@ That's why I'm always learning new things.
 
 Added the Wed Sep 20, 2023
 
-Last update on Oct 31, 2023
+Last update on Nov 1, 2023
 
